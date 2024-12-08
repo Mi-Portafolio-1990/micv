@@ -1,3 +1,17 @@
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const texts = ["Liderazgo ágil", "Sé diferente y triunfa", "Innovar es transcender","Enseñar es aprender","Lidera con inteligencia"];
+        let index = 0;
+        const logoText = document.getElementById("logo-text");
+
+        function changeText() {
+            index = (index + 1) % texts.length;
+            logoText.textContent = texts[index];
+        }
+
+        setInterval(changeText, 5000); // Cambia el texto cada 5000 milisegundos (5 segundos)
+    });
+
 function moveText(element) {
     element.style.transform = "scale(1.1)";
     element.style.transition = "transform 0.3s"; /* Duración de la transición */
