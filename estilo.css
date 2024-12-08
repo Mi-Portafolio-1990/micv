@@ -253,28 +253,48 @@ html{
     font-weight: bold;
     border-radius: 5px;
 }
-.sobremi .fila .col .contenedor-intereses{
+.sobremi .fila .col .contenedor-intereses {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
-.sobremi .fila .col .contenedor-intereses .interes{
-    width: 80px;
-    height: 100px;
+
+.sobremi .fila .col .contenedor-intereses .interes {
+    width: calc(33.33% - 10px); /* Ajustamos el ancho para que cada uno ocupe un tercio del contenedor */
+    height: 80px;
     background-color: #252A2E;
     border-radius: 10px;
-    margin: 0 15px 15px 0;
+    margin: 5px; /* Ajustamos el margen para que haya espacio entre las columnas */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: .3s;
-}.sobremi .fila .col .contenedor-intereses .interes:hover{
-    background-color: #1CB698;
 }
-.sobremi .fila .col .contenedor-intereses .interes i{
+
+.sobremi .fila .col .contenedor-intereses .interes:hover {
+    background-color: #7ddef4;
+}
+
+.sobremi .fila .col .contenedor-intereses .interes i {
     font-size: 30px;
     margin-bottom: 10px;
 }
+
+/* Media query para mantener tres columnas en pantallas pequeñas */
+@media (max-width: 768px) {
+    .sobremi .fila .col .contenedor-intereses .interes {
+        width: calc(33.33% - 10px); /* Mantén el mismo ancho para tres columnas */
+    }
+}
+
+/* Ajustamos para pantallas muy pequeñas (opcional) */
+@media (max-width: 480px) {
+    .sobremi .fila .col .contenedor-intereses .interes {
+        width: calc(50% - 10px); /* Ajustamos a dos columnas si es necesario */
+    }
+}
+
 .sobremi button{
     cursor: pointer;
     background-color: transparent;
