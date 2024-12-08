@@ -1,7 +1,7 @@
 
     document.addEventListener("DOMContentLoaded", function() {
-        const texts = ["Liderazgo ágil", "Sé diferente y triunfa", "Innovar es transcender",
-            "Enseñar es aprender","Lidera con inteligencia","Cocrea"];
+        const texts = ["Lidera", "Innova", "Automatiza",
+            "Enseña","Aprende","Sé ágil","Sinergiza","Transciende"];
         let index = 0;
         const logoText = document.getElementById("logo-text");
 
