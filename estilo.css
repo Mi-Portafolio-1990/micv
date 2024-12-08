@@ -244,8 +244,9 @@ html{
 }
 .sobremi .fila .col ul li strong{
     display: inline-block;
+    text-align: right;
     color: #1CB698;
-    width: 130px;
+    width: 120px;
 }
 .sobremi .fila .col ul li span{
     background-color: #1CB698;
