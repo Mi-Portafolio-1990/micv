@@ -245,7 +245,7 @@ html{
 .sobremi .fila .col ul li strong{
     display: inline-block;
     color: #1CB698;
-    width: 120px;
+    width: 110px;
 }
 .sobremi .fila .col ul li span{
     background-color: #1CB698;
@@ -882,7 +882,7 @@ html{
     display: inline-block;
     margin-right: 20px;
 }
-footer{
+footer {
     background-color: #252A2E;
     color: #fff;
     padding: 50px 0 30px 0;
@@ -890,10 +890,14 @@ footer{
     position: relative;
     width: 100%;
 }
-footer .redes{
+
+footer .redes {
     margin-bottom: 20px;
+    display: flex; /* Usamos flexbox para centrar el contenido */
+    justify-content: center; /* Centramos el ul */
 }
-footer .redes a{
+
+footer .redes a {
     color: #fff;
     display: inline-block;
     text-decoration: none;
@@ -906,7 +910,8 @@ footer .redes a{
     font-size: 20px;
     transition: .10s;
 }
-footer .arriba{
+
+footer .arriba {
     display: block;
     width: 50px;
     height: 50px;
@@ -920,6 +925,40 @@ footer .arriba{
     line-height: 50px;
     font-size: 18px;
 }
+
+/* Nuevos estilos para centrar la lista ul */
+footer .redes .socials {
+    display: flex;
+    justify-content: center; /* Centramos los elementos dentro de la lista ul */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .redes .socials li {
+    margin: 0 10px; /* Espaciado entre los íconos */
+}
+
+footer .socialicon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .socialicon span {
+    font-size: 24px; /* Tamaño de los íconos */
+    color: #fff;
+    transition: color 0.3s;
+}
+
+footer .socialicon:hover span {
+    color: #7ddef4; /* Color del ícono al pasar el ratón */
+}
+
 /* SECCION RESPONSIVE */
 @media screen and (max-width:980px){
     nav{
