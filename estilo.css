@@ -368,7 +368,8 @@ html{
     top: 0;
     left: 0;
     height: 8px;
-
+    width: 0; /* Empezamos desde 0 para animar */ 
+    transition: width 2s; /* Animamos el ancho */
 }
 .skills .skill .barra-skill span{
     position: absolute;
