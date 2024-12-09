@@ -80,6 +80,8 @@ function efectoHabilidades() {
                     count++;
                     span.innerText = `${count}%`;
                     habilidad.style.width = `${count}%`;
+                    span.style.left = `${count}%`; // Movemos el porcentaje junto con la barra
+                    span.style.opacity = 1; // Hacemos visible el porcentaje
                 } else {
                     clearInterval(interval);
                 }
@@ -94,5 +96,3 @@ function efectoHabilidades() {
 
 // Detecto el scrolling para aplicar la animación de la barra de habilidades
 window.addEventListener('scroll', efectoHabilidades);
-
-

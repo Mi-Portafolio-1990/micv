@@ -356,122 +356,46 @@ html{
     margin-bottom: 10px;
 }
 .skills .skill .barra-skill{
-    height: 8px;
-    width: 80%;
-    background-color: #131517;
+    height: 16px; /* Ajustamos la altura para incluir el margen adicional */
+    width: 100%;
+    background-color: transparent; /* Color del margen adicional */
     position: relative;
     margin-bottom: 30px;
-    padding: 2px; /* Añadimos padding para crear el margen interno */
+    padding: 3px; /* Mantiene el padding interno */
     box-sizing: border-box; /* Aseguramos que el padding se incluya en el ancho total */
+    border-radius: 10px; /* Añadimos bordes redondeados */
+    box-shadow: 0 4px 10px #7ddef4; /* Añadimos una sombra ligera */
+}
+.skills .skill .barra-skill .inner-barra-skill {
+    height: 100%;
+    width: 100%;
+    background-color: #7ddef4; /* Color del margen interno */
+    position: relative;
+    box-sizing: border-box; /* Aseguramos que el padding se incluya en el ancho total */
+    border-radius: 7px; /* Mantiene los bordes redondeados */
 }
 .skills .skill .progreso{
     background-color: #4dd1e2;
-    position: relative;
     height: 100%;
     width: 0; /* Empezamos desde 0 para animar */
-    transition: width 2s; /* Animamos el ancho */
+    position: relative; /* Asegura que el porcentaje se mueva dentro de la barra */
+    transition: width 2s ease-in-out; /* Animamos el ancho con una transición suave */
+    border-radius: 7px; /* Mantiene los bordes redondeados */
 }
 .skills .skill .barra-skill span{
     position: absolute;
     height: 20px;
     width: auto;
-    background-color: transparent; /* Hacemos transparente el fondo del span */
+    background-color: transparent;
     line-height: 20px;
-    text-align: left; /* Alineamos el texto a la izquierda */
-    top: -30px; /* Ajustamos la posición vertical */
-    left: 100%; /* Posicionamos al final de la barra */
-    transform: translateX(-100%); /* Ajustamos para que el texto no se salga del contenedor */
+    text-align: center;
+    top: -30px;
+    left: 0;
+    transform: translateX(0);
     font-size: 14px;
-    color: #fff; /* Color del texto */
-    transition: transform 2s; /* Animamos el desplazamiento */
-}
-
-/* Estas clases se agregarán dinámicamente mediante JavaScript */
-.skills .skill .javascript{
-    width: 0%;
-    animation: 2s javascript forwards;
-}
-@keyframes javascript {
-    0% { width: 0%; }
-    100% { width: 75%; }
-}
-
-.skills .skill .htmlcss{
-    width: 0%;
-    animation: 2s htmlcss forwards;
-}
-@keyframes htmlcss {
-    0% { width: 0%; }
-    100% { width: 89%; }
-}
-
-.skills .skill .photoshop{
-    width: 0%;
-    animation: 2s photoshop forwards;
-}
-@keyframes photoshop {
-    0% { width: 0%; }
-    100% { width: 95%; }
-}
-
-.skills .skill .wordpress{
-    width: 0%;
-    animation: 2s wordpress forwards;
-}
-@keyframes wordpress {
-    0% { width: 0%; }
-    100% { width: 81%; }
-}
-
-.skills .skill .drupal{
-    width: 0%;
-    animation: 2s drupal forwards;
-}
-@keyframes drupal {
-    0% { width: 0%; }
-    100% { width: 55%; }
-}
-
-.skills .skill .comunicacion{
-    width: 0%;
-    animation: 2s comunicacion forwards;
-}
-@keyframes comunicacion {
-    0% { width: 0%; }
-    100% { width: 90%; }
-}
-.skills .skill .liderazgo{
-    width: 0%;
-    animation: 2s liderazgo forwards;
-}
-@keyframes liderazgo {
-    0% { width: 0%; }
-    100% { width: 90%; }
-}
-.skills .skill .trabajo{
-    width: 0%;
-    animation: 2s trabajo forwards;
-}
-@keyframes trabajo {
-    0% { width: 0%; }
-    100% { width: 95%; }
-}
-
-.skills .skill .emocional{
-    width: 0%;
-    animation: 2s emocional forwards;
-}
-@keyframes emocional {
-    0% { width: 0%; }
-    100% { width: 94%; }
-}
-.skills .skill .creatividad{
-    width: 0%;
-    animation: 2s creatividad forwards;
-}
-@keyframes creatividad {
-    0% { width: 0%; }
-    100% { width: 99%; }
+    color: #fff;
+    transition: left 0.2s, opacity 0.5s;
+    opacity: 0;
 }
 
 
