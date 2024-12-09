@@ -336,7 +336,6 @@ html{
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
-
 }
 .skills .fila{
     display: flex;
@@ -361,36 +360,39 @@ html{
     background-color: #131517;
     position: relative;
     margin-bottom: 30px;
+    padding: 2px; /* Añadimos padding para crear el margen interno */
+    box-sizing: border-box; /* Aseguramos que el padding se incluya en el ancho total */
 }
 .skills .skill .progreso{
     background-color: #4dd1e2;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 8px;
-    width: 0; /* Empezamos desde 0 para animar */ 
+    position: relative;
+    height: 100%;
+    width: 0; /* Empezamos desde 0 para animar */
     transition: width 2s; /* Animamos el ancho */
 }
 .skills .skill .barra-skill span{
     position: absolute;
-    height: 40px;
-    width: 40px;
-    background-color: #4dd1e2;
-    border-radius: 50px;
-    line-height: 40px;
-    text-align: center;
-    top: -17px;
-    right: -15px;
+    height: 20px;
+    width: auto;
+    background-color: transparent; /* Hacemos transparente el fondo del span */
+    line-height: 20px;
+    text-align: left; /* Alineamos el texto a la izquierda */
+    top: -30px; /* Ajustamos la posición vertical */
+    left: 100%; /* Posicionamos al final de la barra */
+    transform: translateX(-100%); /* Ajustamos para que el texto no se salga del contenedor */
     font-size: 14px;
+    color: #fff; /* Color del texto */
+    transition: transform 2s; /* Animamos el desplazamiento */
 }
-/* Estas clases se agregaran dinamicamente mediante javascript */
+
+/* Estas clases se agregarán dinámicamente mediante JavaScript */
 .skills .skill .javascript{
     width: 0%;
     animation: 4s javascript forwards;
 }
 @keyframes javascript {
-    0%{width: 0%;}
-    100%{width: 75%;}
+    0% { width: 0%; }
+    100% { width: 75%; }
 }
 
 .skills .skill .htmlcss{
@@ -398,8 +400,8 @@ html{
     animation: 4s htmlcss forwards;
 }
 @keyframes htmlcss {
-    0%{width: 0%;}
-    100%{width: 89%;}
+    0% { width: 0%; }
+    100% { width: 89%; }
 }
 
 .skills .skill .photoshop{
@@ -407,8 +409,8 @@ html{
     animation: 4s photoshop forwards;
 }
 @keyframes photoshop {
-    0%{width: 0%;}
-    100%{width: 95%;}
+    0% { width: 0%; }
+    100% { width: 95%; }
 }
 
 .skills .skill .wordpress{
@@ -416,8 +418,8 @@ html{
     animation: 4s wordpress forwards;
 }
 @keyframes wordpress {
-    0%{width: 0%;}
-    100%{width: 81%;}
+    0% { width: 0%; }
+    100% { width: 81%; }
 }
 
 .skills .skill .drupal{
@@ -425,8 +427,8 @@ html{
     animation: 4s drupal forwards;
 }
 @keyframes drupal {
-    0%{width: 0%;}
-    100%{width: 55%;}
+    0% { width: 0%; }
+    100% { width: 55%; }
 }
 
 .skills .skill .comunicacion{
@@ -434,24 +436,24 @@ html{
     animation: 4s comunicacion forwards;
 }
 @keyframes comunicacion {
-    0%{width: 0%;}
-    100%{width: 90%;}
+    0% { width: 0%; }
+    100% { width: 90%; }
 }
 .skills .skill .liderazgo{
     width: 0%;
     animation: 4s liderazgo forwards;
 }
 @keyframes liderazgo {
-    0%{width: 0%;}
-    100%{width: 90%;}
+    0% { width: 0%; }
+    100% { width: 90%; }
 }
 .skills .skill .trabajo{
     width: 0%;
     animation: 4s trabajo forwards;
 }
 @keyframes trabajo {
-    0%{width: 0%;}
-    100%{width: 95%;}
+    0% { width: 0%; }
+    100% { width: 95%; }
 }
 
 .skills .skill .emocional{
@@ -459,16 +461,16 @@ html{
     animation: 4s emocional forwards;
 }
 @keyframes emocional {
-    0%{width: 0%;}
-    100%{width: 94%;}
+    0% { width: 0%; }
+    100% { width: 94%; }
 }
 .skills .skill .creatividad{
     width: 0%;
     animation: 4s creatividad forwards;
 }
 @keyframes creatividad {
-    0%{width: 0%;}
-    100%{width: 99%;}
+    0% { width: 0%; }
+    100% { width: 99%; }
 }
 
 /* SECCION EDUCACIÓN */

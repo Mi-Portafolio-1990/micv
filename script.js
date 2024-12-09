@@ -86,10 +86,11 @@ function efectoHabilidades() {
             }, 20); // Ajusta este valor para la velocidad de la animación del porcentaje
         }
         animacionEjecutada = true; // Marcar que la animación ha sido ejecutada
+
+        // Dejar de escuchar el evento de desplazamiento
+        window.removeEventListener('scroll', efectoHabilidades);
     }
 }
 
 // Detecto el scrolling para aplicar la animación de la barra de habilidades
-window.onscroll = function() {
-    efectoHabilidades();
-}
+window.addEventListener('scroll', efectoHabilidades);
