@@ -57,11 +57,14 @@ function seleccionar(){
     menuVisible = false;
 }
 
-//Función que aplica las animaciones de las habilidades
+// Variable para seguir el estado de animación
+let animacionEjecutada = false;
+
+// Función que aplica las animaciones de las habilidades
 function efectoHabilidades() {
     var skills = document.getElementById("skills");
     var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
-    if (distancia_skills >= 300) {
+    if (distancia_skills >= 300 && !animacionEjecutada) {
         let habilidades = document.getElementsByClassName("progreso");
 
         for (let i = 0; i < habilidades.length; i++) {
@@ -82,6 +85,7 @@ function efectoHabilidades() {
                 }
             }, 20); // Ajusta este valor para la velocidad de la animación del porcentaje
         }
+        animacionEjecutada = true; // Marcar que la animación ha sido ejecutada
     }
 }
 
