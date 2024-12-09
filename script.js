@@ -56,30 +56,36 @@ function seleccionar(){
     document.getElementById("nav").classList = "";
     menuVisible = false;
 }
-//Funcion que aplica las animaciones de las habilidades
-function efectoHabilidades(){
+
+//Función que aplica las animaciones de las habilidades
+function efectoHabilidades() {
     var skills = document.getElementById("skills");
     var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
-    if(distancia_skills >= 300){
+    if (distancia_skills >= 300) {
         let habilidades = document.getElementsByClassName("progreso");
-        habilidades[0].classList.add("javascript");
-        habilidades[1].classList.add("htmlcss");
-        habilidades[2].classList.add("photoshop");
-        habilidades[3].classList.add("wordpress");
-        habilidades[4].classList.add("drupal");
 
-        habilidades[5].classList.add("comunicacion");
-        habilidades[6].classList.add("liderazgo");
-        habilidades[7].classList.add("trabajo");
-        habilidades[8].classList.add("emocional");
-        habilidades[9].classList.add("creatividad");
+        for (let i = 0; i < habilidades.length; i++) {
+            let habilidad = habilidades[i];
+            let span = habilidad.querySelector('span');
+            let porcentaje = parseInt(span.innerText.replace('%', ''));
+            let count = 0;
+            span.innerText = '0%';
+
+            // Animamos la barra y el porcentaje
+            let interval = setInterval(() => {
+                if (count < porcentaje) {
+                    count++;
+                    span.innerText = `${count}%`;
+                    habilidad.style.width = `${count}%`;
+                } else {
+                    clearInterval(interval);
+                }
+            }, 20); // Ajusta este valor para la velocidad de la animación del porcentaje
+        }
     }
 }
 
-
-//detecto el scrolling para aplicar la animacion de la barra de habilidades
-window.onscroll = function(){
+// Detecto el scrolling para aplicar la animación de la barra de habilidades
+window.onscroll = function() {
     efectoHabilidades();
-} 
-
-
+}

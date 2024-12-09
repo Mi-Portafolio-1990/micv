@@ -368,6 +368,7 @@ html{
     top: 0;
     left: 0;
     height: 8px;
+
 }
 .skills .skill .barra-skill span{
     position: absolute;
@@ -384,7 +385,7 @@ html{
 /* Estas clases se agregaran dinamicamente mediante javascript */
 .skills .skill .javascript{
     width: 0%;
-    animation: 2s javascript forwards;
+    animation: 4s javascript forwards;
 }
 @keyframes javascript {
     0%{width: 0%;}
@@ -393,7 +394,7 @@ html{
 
 .skills .skill .htmlcss{
     width: 0%;
-    animation: 2s htmlcss forwards;
+    animation: 4s htmlcss forwards;
 }
 @keyframes htmlcss {
     0%{width: 0%;}
@@ -402,7 +403,7 @@ html{
 
 .skills .skill .photoshop{
     width: 0%;
-    animation: 2s photoshop forwards;
+    animation: 4s photoshop forwards;
 }
 @keyframes photoshop {
     0%{width: 0%;}
@@ -411,7 +412,7 @@ html{
 
 .skills .skill .wordpress{
     width: 0%;
-    animation: 2s wordpress forwards;
+    animation: 4s wordpress forwards;
 }
 @keyframes wordpress {
     0%{width: 0%;}
@@ -420,7 +421,7 @@ html{
 
 .skills .skill .drupal{
     width: 0%;
-    animation: 2s drupal forwards;
+    animation: 4s drupal forwards;
 }
 @keyframes drupal {
     0%{width: 0%;}
@@ -429,7 +430,7 @@ html{
 
 .skills .skill .comunicacion{
     width: 0%;
-    animation: 2s comunicacion forwards;
+    animation: 4s comunicacion forwards;
 }
 @keyframes comunicacion {
     0%{width: 0%;}
@@ -437,7 +438,7 @@ html{
 }
 .skills .skill .liderazgo{
     width: 0%;
-    animation: 2s liderazgo forwards;
+    animation: 4s liderazgo forwards;
 }
 @keyframes liderazgo {
     0%{width: 0%;}
@@ -445,7 +446,7 @@ html{
 }
 .skills .skill .trabajo{
     width: 0%;
-    animation: 2s trabajo forwards;
+    animation: 4s trabajo forwards;
 }
 @keyframes trabajo {
     0%{width: 0%;}
@@ -454,7 +455,7 @@ html{
 
 .skills .skill .emocional{
     width: 0%;
-    animation: 2s emocional forwards;
+    animation: 4s emocional forwards;
 }
 @keyframes emocional {
     0%{width: 0%;}
@@ -462,7 +463,7 @@ html{
 }
 .skills .skill .creatividad{
     width: 0%;
-    animation: 2s creatividad forwards;
+    animation: 4s creatividad forwards;
 }
 @keyframes creatividad {
     0%{width: 0%;}
