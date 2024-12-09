@@ -321,6 +321,7 @@ html{
 .sobremi button:hover .overlay{
     width: 100%;
 }
+
 /* SECCION S K I L L S */
 .skills{
     background-color: #252A2E;
@@ -388,7 +389,7 @@ html{
 /* Estas clases se agregarán dinámicamente mediante JavaScript */
 .skills .skill .javascript{
     width: 0%;
-    animation: 4s javascript forwards;
+    animation: 2s javascript forwards;
 }
 @keyframes javascript {
     0% { width: 0%; }
@@ -397,7 +398,7 @@ html{
 
 .skills .skill .htmlcss{
     width: 0%;
-    animation: 4s htmlcss forwards;
+    animation: 2s htmlcss forwards;
 }
 @keyframes htmlcss {
     0% { width: 0%; }
@@ -406,7 +407,7 @@ html{
 
 .skills .skill .photoshop{
     width: 0%;
-    animation: 4s photoshop forwards;
+    animation: 2s photoshop forwards;
 }
 @keyframes photoshop {
     0% { width: 0%; }
@@ -415,7 +416,7 @@ html{
 
 .skills .skill .wordpress{
     width: 0%;
-    animation: 4s wordpress forwards;
+    animation: 2s wordpress forwards;
 }
 @keyframes wordpress {
     0% { width: 0%; }
@@ -424,7 +425,7 @@ html{
 
 .skills .skill .drupal{
     width: 0%;
-    animation: 4s drupal forwards;
+    animation: 2s drupal forwards;
 }
 @keyframes drupal {
     0% { width: 0%; }
@@ -433,7 +434,7 @@ html{
 
 .skills .skill .comunicacion{
     width: 0%;
-    animation: 4s comunicacion forwards;
+    animation: 2s comunicacion forwards;
 }
 @keyframes comunicacion {
     0% { width: 0%; }
@@ -441,7 +442,7 @@ html{
 }
 .skills .skill .liderazgo{
     width: 0%;
-    animation: 4s liderazgo forwards;
+    animation: 2s liderazgo forwards;
 }
 @keyframes liderazgo {
     0% { width: 0%; }
@@ -449,7 +450,7 @@ html{
 }
 .skills .skill .trabajo{
     width: 0%;
-    animation: 4s trabajo forwards;
+    animation: 2s trabajo forwards;
 }
 @keyframes trabajo {
     0% { width: 0%; }
@@ -458,7 +459,7 @@ html{
 
 .skills .skill .emocional{
     width: 0%;
-    animation: 4s emocional forwards;
+    animation: 2s emocional forwards;
 }
 @keyframes emocional {
     0% { width: 0%; }
@@ -466,12 +467,15 @@ html{
 }
 .skills .skill .creatividad{
     width: 0%;
-    animation: 4s creatividad forwards;
+    animation: 2s creatividad forwards;
 }
 @keyframes creatividad {
     0% { width: 0%; }
     100% { width: 99%; }
 }
+
+
+
 
 /* SECCION EDUCACIÓN */
 .curriculum{
